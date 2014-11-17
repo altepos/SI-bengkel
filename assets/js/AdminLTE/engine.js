@@ -16,11 +16,15 @@ var APP = function(app, $) {
 
     app.init = function() {
         var self = this;
+        self.setupController();
+        self.clickController();
+        self.hoverController();
+
         return self;
     };
 
     app.setupController = function() {
-
+        // place this to setup page using javascript 
     };
 
     app.clickController = function() {
@@ -41,6 +45,8 @@ var APP = function(app, $) {
     app.someClick = function() {
         console.log('jajal');
     };
+
+    return app;
 
 }(APP || {}, jQuery);
 
