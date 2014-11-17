@@ -27,13 +27,13 @@
                                                 <div class="form-group">
                                                     <label for="inputEmail3" class="col-sm-3 control-label">No ref</label>
                                                     <div class="col-sm-9">
-                                                        <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                                                        <input type="email" class="form-control input-sm" id="inputEmail3" placeholder="Email">
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
                                                     <label for="inputEmail3" class="col-sm-3 control-label">Tanggal pembelian</label>
                                                     <div class="col-sm-5">
-                                                        <div class="input-group">
+                                                        <div class="input-group input-group-sm">
                                                             <div class="input-group-addon">
                                                                 <i class="fa fa-calendar"></i>
                                                             </div>
@@ -44,7 +44,7 @@
                                                 <div class="form-group">
                                                     <label for="inputEmail3" class="col-sm-3 control-label">Pencarian barang</label>
                                                     <div class="col-sm-9">
-                                                        <div class="input-group">
+                                                        <div class="input-group input-group-sm">
                                                             <input type="text" name="table_search" class="form-control input-sm pull-right" placeholder="Barcode"/>
                                                             <div class="input-group-btn">
                                                                 <button class="btn btn-sm btn-default"><i class="fa fa-search"></i></button>
@@ -60,13 +60,15 @@
                                                 <div class="form-group">
                                                     <label for="inputEmail3" class="col-sm-3 control-label">Supplier</label>
                                                     <div class="col-sm-9">
-                                                        <select class="form-control">
-                                                            <option>option 1</option>
-                                                            <option>option 2</option>
-                                                            <option>option 3</option>
-                                                            <option>option 4</option>
-                                                            <option>option 5</option>
-                                                        </select>
+                                                        <div class="">
+                                                            <select class="form-control input-sm">
+                                                                <option>option 1</option>
+                                                                <option>option 2</option>
+                                                                <option>option 3</option>
+                                                                <option>option 4</option>
+                                                                <option>option 5</option>
+                                                            </select>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -316,13 +318,13 @@
                                                 <div class="form-group">
                                                     <label for="inputEmail3" class="col-sm-3 control-label">Sub total</label>
                                                     <div class="col-sm-9">
-                                                        <input type="text" class="form-control" id="inputEmail3" placeholder="00">
+                                                        <input type="text" class="form-control input-sm" id="inputEmail3" placeholder="00">
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
                                                     <label for="inputEmail3" class="col-sm-3 control-label">Diskon</label>
                                                     <div class="col-sm-9">
-                                                        <input type="text" class="form-control" id="inputEmail3" placeholder="0%">
+                                                        <input type="text" class="form-control input-sm" id="inputEmail3" placeholder="0%">
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
@@ -333,7 +335,7 @@
                                                         <input type="checkbox" class="minimal-red"/>
                                                     </div>
                                                     <div class="col-sm-4">
-                                                        <input type="text" class="form-control" id="inputEmail3" placeholder="0%">
+                                                        <input type="text" class="form-control input-sm" id="inputEmail3" placeholder="0%">
                                                     </div>
                                                 </div>
                                             </div>
@@ -343,19 +345,19 @@
                                                 <div class="form-group">
                                                     <label for="inputEmail3" class="col-sm-3 control-label">Total</label>
                                                     <div class="col-sm-9">
-                                                        <input type="text" class="form-control" id="inputEmail3" placeholder="00">
+                                                        <input type="text" class="form-control input-sm" id="inputEmail3" placeholder="00">
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
                                                     <label for="inputEmail3" class="col-sm-3 control-label">Bayar</label>
                                                     <div class="col-sm-9">
-                                                        <input type="text" class="form-control" id="inputEmail3" placeholder="0%">
+                                                        <input type="text" class="form-control input-sm" id="inputEmail3" placeholder="0%">
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
                                                     <label for="inputEmail3" class="col-sm-3 control-label">Kurang</label>
                                                     <div class="col-sm-9">
-                                                        <input type="text" class="form-control" id="inputEmail3" placeholder="0">
+                                                        <input type="text" class="form-control input-sm" id="inputEmail3" placeholder="0">
                                                     </div>
                                                 </div>
                                             </div>
