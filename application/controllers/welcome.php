@@ -20,7 +20,8 @@ class Welcome extends CI_Controller {
 	public function index($namaHalaman = '')
 	{
 		$halaman['belanja'] = $this->load->view('pages/belanja', '', true);
-		$data['content'] = $halaman['belanja'];
+		$halaman['barang'] = $this->load->view('pages/barang', '', true);
+		$data['content'] = $halaman[$namaHalaman];
 		$this->load->view('master_page', $data);
 	}
 
