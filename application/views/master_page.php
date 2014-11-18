@@ -515,15 +515,5 @@
         <!-- AdminLTE for demo purposes -->
         <script src="<?php echo base_url('assets/js/AdminLTE/demo.js') ?>" type="text/javascript"></script>
         <script src="<?php echo base_url('assets/js/AdminLTE/engine.js') ?>" type="text/javascript"></script>
-        <script type="text/javascript">
-            $(function() {
-                $('#tanggal-beli').datepicker({format: 'mm/dd/yyyy HH:mm'});
-
-                $('#data-transaksi').slimScroll({
-                    height: '250px'
-                });
-                $('.transaksi').fixedHeaderTable({ height: 230});
-            });
-        </script>
     </body>
 </html>
