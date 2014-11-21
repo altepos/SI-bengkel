@@ -25,13 +25,13 @@
                         <div class="col-md-6">
                             <div class="form-horizontal" role="form">
                                 <div class="form-group">
-                                    <label for="inputEmail3" class="col-sm-3 control-label">No ref</label>
+                                    <label for="no-ref" class="col-sm-3 control-label">No ref</label>
                                     <div class="col-sm-9">
-                                        <input type="email" class="form-control input-sm" id="inputEmail3" placeholder="No ref">
+                                        <input type="email" class="form-control input-sm" id="no-ref" placeholder="No ref">
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="inputEmail3" class="col-sm-3 control-label">Tanggal pembelian</label>
+                                    <label for="tanggal-beli" class="col-sm-3 control-label">Tanggal pembelian</label>
                                     <div class="col-sm-5">
                                         <div class="input-group input-group-sm">
                                             <div class="input-group-addon">
@@ -42,10 +42,10 @@
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="inputEmail3" class="col-sm-3 control-label">Pencarian barang</label>
+                                    <label for="pencarian" class="col-sm-3 control-label">Pencarian barang</label>
                                     <div class="col-sm-9">
                                         <div class="input-group input-group-sm">
-                                            <input type="text" name="table_search" class="form-control input-sm pull-right search-barcode" data-provide="typeahead" placeholder="Barcode"/>
+                                            <input type="text" id="pencarian" name="table_search" class="form-control input-sm pull-right search-barcode" data-provide="typeahead" placeholder="Barcode"/>
                                             <div class="input-group-btn">
                                                 <button class="btn btn-sm btn-default"><i class="fa fa-search"></i></button>
                                                 <button class="btn btn-sm btn-default" data-toggle="modal" data-target="#add-barang"><i class="fa fa-plus-square"></i> Tambah baru</button>
@@ -59,17 +59,15 @@
                         <div class="col-md-5">
                             <div class="form-horizontal" role="form">
                                 <div class="form-group">
-                                    <label for="inputEmail3" class="col-sm-3 control-label">Supplier</label>
+                                    <label for="suplier" class="col-sm-3 control-label">Suplier</label>
                                     <div class="col-sm-9">
-                                        <div class="">
-                                            <select class="form-control input-sm">
-                                                <option>option 1</option>
-                                                <option>option 2</option>
-                                                <option>option 3</option>
-                                                <option>option 4</option>
-                                                <option>option 5</option>
-                                            </select>
-                                        </div>
+                                        <select id="suplier" class="form-control input-sm">
+                                            <option>option 1</option>
+                                            <option>option 2</option>
+                                            <option>option 3</option>
+                                            <option>option 4</option>
+                                            <option>option 5</option>
+                                        </select>
                                     </div>
                                 </div>
                             </div>
@@ -229,11 +227,11 @@
                             <div class="form-group">
                                 <div class="col-sm-12">
                                     &nbsp;
-                                    <button class="btn btn-primary btn-lg btn-flat">Submit</button>
+                                    <button class="btn btn-primary btn-sm btn-flat">Submit</button>
                                     &nbsp;
-                                    <button class="btn btn-info btn-lg btn-flat">Reset</button>
+                                    <button class="btn btn-info btn-sm btn-flat">Reset</button>
                                     &nbsp;
-                                    <button class="btn btn-default btn-lg btn-flat">Cancel</button>
+                                    <button class="btn btn-default btn-sm btn-flat">Cancel</button>
                                 </div>
                             </div>
                         </div>
@@ -269,8 +267,26 @@
                         </div>
                         <div class="form-group">
                             <label for="inputPassword3" class="col-sm-2 control-label">Merk</label>
-                            <div class="col-sm-8">
-                              <input type="text" class="form-control input-sm" id="inputPassword3" placeholder="Merk">
+                            <div class="col-sm-5">
+                                <select class="form-control">
+                                    <option>Kategori Barang</option>
+                                    <option>option 2</option>
+                                    <option>option 3</option>
+                                    <option>option 4</option>
+                                    <option>option 5</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPassword3" class="col-sm-2 control-label">Kategori</label>
+                            <div class="col-sm-5">
+                                <select class="form-control">
+                                    <option>Kategori Barang</option>
+                                    <option>option 2</option>
+                                    <option>option 3</option>
+                                    <option>option 4</option>
+                                    <option>option 5</option>
+                                </select>
                             </div>
                         </div>
                         <div class="form-group">
@@ -289,6 +305,12 @@
                             <label for="inputPassword3" class="col-sm-2 control-label">Stok masuk</label>
                             <div class="col-sm-4">
                               <input type="text" class="form-control input-sm" id="inputPassword3" placeholder="Stok masuk">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPassword3" class="col-sm-2 control-label">Deskripsi barang</label>
+                            <div class="col-sm-4">
+                                <textarea class="form-control" placeholder="Deskripsi barang"></textarea>
                             </div>
                         </div>
                         <div class="form-group">
