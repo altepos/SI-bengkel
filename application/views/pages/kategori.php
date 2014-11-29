@@ -1,8 +1,8 @@
 <!-- Content Header (Page header) -->
                 <section class="content-header hidden">
                     <h1>
-                        Barang
-                        <small>Panel barang</small>
+                        User
+                        <small>Panel User</small>
                     </h1>
                     <ol class="breadcrumb">
                         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
@@ -89,15 +89,18 @@
                             <div class="box box-info add-form hide">
                                 <div class="panel panel-default">
                                     <div class="panel-body">
-                                        Tambah Barang
+                                        Tambah User
                                     </div>
                                 </div>
                                 <div class="row" style="margin: 0;margin-top: 15px;">
                                     <div class="col-md-offset-1 col-md-5">
                                         <div class="form-horizontal" role="form">
                                             <div class="form-group">
-                                                <div class="col-sm-12 ">
-                                                    <input type="text" class="form-control" id="inputEmail3" placeholder="Nama Barang">
+                                                <div class="col-sm-6 ">
+                                                    <input type="text" class="form-control" id="inputEmail3" placeholder="Nama Depan">
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <input type="text" class="form-control" id="inputEmail3" placeholder="Nama Belakang">
                                                 </div>
                                             </div>
                                         </div>
@@ -106,13 +109,7 @@
                                         <div class="form-horizontal" role="form">
                                             <div class="form-group">
                                                 <div class="col-sm-12">
-                                                    <select class="form-control">
-                                                        <option>Merk Barang</option>
-                                                        <option>option 2</option>
-                                                        <option>option 3</option>
-                                                        <option>option 4</option>
-                                                        <option>option 5</option>
-                                                    </select>
+                                                    <input type="text" class="form-control" id="inputEmail3" placeholder="Username">
                                                 </div>
                                             </div>
                                         </div>
@@ -121,13 +118,7 @@
                                         <div class="form-horizontal" role="form">
                                             <div class="form-group">
                                                 <div class="col-sm-12">
-                                                    <select class="form-control">
-                                                        <option>Kategori Barang</option>
-                                                        <option>option 2</option>
-                                                        <option>option 3</option>
-                                                        <option>option 4</option>
-                                                        <option>option 5</option>
-                                                    </select>
+                                                    <input type="password" class="form-control" id="inputEmail3" placeholder="Password">
                                                 </div>
                                             </div>
                                         </div>
@@ -137,41 +128,8 @@
                                     <div class="col-md-offset-1 col-md-5">
                                         <div class="form-horizontal" role="form">
                                             <div class="form-group">
-                                                <div class="col-sm-12 ">
-                                                    <textarea style="margin: 0px; width: 100%; height: 154px;">   Deskripsi Barang</textarea>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-2">
-                                        <div class="form-horizontal" role="form">
-                                            <div class="form-group">
                                                 <div class="col-sm-12">
-                                                    <div class="input-group">
-                                                      <input type="text" class="form-control" placeholder="Letak Gudang">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-2">
-                                        <div class="form-horizontal" role="form">
-                                            <div class="form-group">
-                                                <div class="col-sm-12">
-                                                   <div class="input-group">
-                                                      <input type="text" class="form-control" placeholder="Barcode">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row" style="margin: 0;margin-top: 15px;">
-                                    <div class="col-md-offset-1 col-md-5">
-                                        <div class="form-horizontal" role="form">
-                                            <div class="form-group">
-                                                <div class="col-sm-12 ">
-                                                    <input type="text" class="form-control" placeholder="Stok">
+                                                    <input type="text" class="form-control" placeholder="No Identitas">
                                                 </div>
                                             </div>
                                         </div>
@@ -180,7 +138,7 @@
                                         <div class="form-horizontal" role="form">
                                             <div class="form-group">
                                                 <div class="col-sm-12">
-                                                    <input type="text" class="form-control" placeholder="Jasa">
+                                                    <input type="text" class="form-control" placeholder="Email">
                                                 </div>
                                             </div>
                                         </div>
@@ -191,16 +149,7 @@
                                         <div class="form-horizontal" role="form">
                                             <div class="form-group">
                                                 <div class="col-sm-12 ">
-                                                    <input type="text" class="form-control" placeholder="Harga Jual">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="form-horizontal" role="form">
-                                            <div class="form-group">
-                                                <div class="col-sm-12">
-                                                    <input type="text" class="form-control" placeholder="Potongan Harga">
+                                                    <textarea style="margin: 0px; width: 100%; height: 154px;">   Alamat </textarea>
                                                 </div>
                                             </div>
                                         </div>
@@ -224,7 +173,7 @@
                             <div class="box box-info">
                                 <div class="panel panel-default">
                                     <div class="panel-body">
-                                        Data Barang
+                                        Data User
                                     </div>
                                 </div>
                                  <div class="box-body">
@@ -329,12 +278,12 @@
                                                     <thead>
                                                         <tr>
                                                             <th>#</th>
-                                                            <th>Nama Barang</th>
-                                                            <th>Merk</th>
-                                                            <th>Kategori</th>
-                                                            <th>Barcode</th>
-                                                            <th>Letak Gudang</th>
-                                                            <th>Stok</th>
+                                                            <th>Nama User </th>
+                                                            <th>Username </th>
+                                                            <th>Email </th>
+                                                            <th>Alamat</th>
+                                                            <th>No Identitas</th>
+                                                            <th>Terakhir Login</th>
                                                             <th>Manage</th>
                                                         </tr>
                                                     </thead>
@@ -345,37 +294,37 @@
                                                             ?>
                                                                 <tr>
                                                                     <td><?php echo $i?></td>
-                                                                    <td>Barang <?php echo $i?></td>
-                                                                    <td>Merk <?php echo $i?></td>
-                                                                    <td>Kategori <?php echo $i?></td>
-                                                                    <td>Barcode <?php echo $i?></td>
-                                                                    <td>Letak Gudang <?php echo $i?></td>
-                                                                    <td>Stok <?php echo $i?></td>
+                                                                    <td>Nama Depan Nama Belakang <?php echo $i?></td>
+                                                                    <td>Usename <?php echo $i?></td>
+                                                                    <td>Email <?php echo $i?></td>
+                                                                    <td>Alamat <?php echo $i?></td>
+                                                                    <td>Nomo Identitas <?php echo $i?></td>
+                                                                    <td>Terakhir Login <?php echo $i?></td>
                                                                     <td>
-                                                                        <button class="btn btn-sm btn-default" data-toggle="modal" data-target="#hapus-barang-<?php echo $i?> "><i class="fa fa-trash"></i> Delete Barang</button>
-                                                                        <button class="btn btn-sm btn-default" data-toggle="modal" data-target="#edit-barang-<?php echo $i?> "><i class="fa fa-edit"></i> Edit Barang</button>
+                                                                        <button class="btn btn-sm btn-default" data-toggle="modal" data-target="#hapus-<?php echo $i?> "><i class="fa fa-trash"></i> Delete User</button>
+                                                                        <button class="btn btn-sm btn-default" data-toggle="modal" data-target="#edit-<?php echo $i?> "><i class="fa fa-edit"></i> Edit User</button>
                                                                     </td>
                                                                 </tr>
-                                                                <div class="modal fade bs-example-modal-lg" id="edit-barang-<?php echo $i?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                                                <div class="modal fade bs-example-modal-lg" id="edit-<?php echo $i?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                                                                     <div class="modal-dialog modal-lg">
                                                                         <div class="modal-content">
                                                                             <div class="modal-header">
                                                                                 <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                                                                                <h3 class="modal-title" id="myModalLabel">Edit Barang</h3>
+                                                                                <h3 class="modal-title" id="myModalLabel">Edit User</h3>
                                                                             </div>
                                                                             <div class="modal-body">
                                                                                 <div class="row">
                                                                                     <div class="col-md-10 col-md-offset-1 form-horizontal" role="form">
                                                                                         <div class="form-group">
-                                                                                            <label for="inputEmail3" class="col-sm-2 control-label">Barcode</label>
+                                                                                            <label for="inputEmail3" class="col-sm-2 control-label">Nama User</label>
                                                                                             <div class="col-sm-6">
-                                                                                                <input type="text" class="form-control input-sm" id="inputEmail3" placeholder="Barcode" value="Barcode <?php echo $i; ?>">
+                                                                                                <input type="text" class="form-control input-sm" id="inputEmail3" placeholder="Barcode" value="Nama <?php echo $i; ?>">
                                                                                             </div>
                                                                                         </div>
                                                                                         <div class="form-group">
-                                                                                            <label for="inputPassword3" class="col-sm-2 control-label">Nama Barang</label>
+                                                                                            <label for="inputPassword3" class="col-sm-2 control-label">Username</label>
                                                                                             <div class="col-sm-6">
-                                                                                              <input type="text" class="form-control input-sm" id="inputPassword3" placeholder="Nama barang" value="Barang <?php echo $i; ?>">
+                                                                                              <input type="text" class="form-control input-sm" id="inputPassword3" placeholder="Nama barang" value="Username <?php echo $i; ?>">
                                                                                             </div>
                                                                                         </div>
                                                                                         <div class="form-group">tambah baru
@@ -424,17 +373,17 @@
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                                <div class="modal fade bs-example-modal-lg" id="hapus-barang-<?php echo $i?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                                                <div class="modal fade bs-example-modal-lg" id="hapus-<?php echo $i?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                                                                     <div class="modal-dialog modal-md">
                                                                         <div class="modal-content">
                                                                             <div class="modal-header">
                                                                                 <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                                                                                <h3 class="modal-title" id="myModalLabel">Hapus Barang</h3>
+                                                                                <h3 class="modal-title" id="myModalLabel">Hapus User</h3>
                                                                             </div>
                                                                             <div class="modal-body">
                                                                                 <div class="row">
                                                                                     <div class="col-md-10 col-md-offset-1 form-horizontal" role="form">
-                                                                                        Apakah anda yakin akan menghapus Barang <?php echo $i; ?> ?
+                                                                                        Apakah anda yakin akan menghapus User <?php echo $i; ?> ?
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
