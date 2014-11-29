@@ -42,6 +42,7 @@
                                         <th>ID</th>
                                         <th>Kategori</th>
                                         <th>Keterangan</th>
+                                        <th>Aksi</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -49,21 +50,37 @@
                                         <td>183</td>
                                         <td>John Doe</td>
                                         <td>11-7-2014</td>
+                                        <td>
+                                            <button class="btn btn-sm btn-info" data-toggle="modal" data-target="#edit-barang-"><i class="fa fa-edit"></i> Edit Barang</button>
+                                            <button class="btn btn-sm btn-danger" data-toggle="modal" data-target="#hapus-barang-"><i class="fa fa-trash"></i> Delete Barang</button>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>219</td>
                                         <td>Jane Doe</td>
                                         <td>11-7-2014</td>
+                                        <td>
+                                            <button class="btn btn-sm btn-info" data-toggle="modal" data-target="#edit-barang-"><i class="fa fa-edit"></i> Edit Barang</button>
+                                            <button class="btn btn-sm btn-danger" data-toggle="modal" data-target="#hapus-barang-"><i class="fa fa-trash"></i> Delete Barang</button>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>657</td>
                                         <td>Bob Doe</td>
                                         <td>11-7-2014</td>
+                                        <td>
+                                            <button class="btn btn-sm btn-info" data-toggle="modal" data-target="#edit-barang-"><i class="fa fa-edit"></i> Edit Barang</button>
+                                            <button class="btn btn-sm btn-danger" data-toggle="modal" data-target="#hapus-barang-"><i class="fa fa-trash"></i> Delete Barang</button>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>175</td>
                                         <td>Mike Doe</td>
                                         <td>11-7-2014</td>
+                                        <td>
+                                            <button class="btn btn-sm btn-info" data-toggle="modal" data-target="#edit-barang-"><i class="fa fa-edit"></i> Edit Barang</button>
+                                            <button class="btn btn-sm btn-danger" data-toggle="modal" data-target="#hapus-barang-"><i class="fa fa-trash"></i> Delete Barang</button>
+                                        </td>
                                     </tr>
                                 </tbody>
                                 
@@ -106,7 +123,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h3 class="modal-title" id="myModalLabel">Data item barang</h3>
+                <h3 class="modal-title" id="myModalLabel">Form tambah kategori</h3>
             </div>
             <div class="modal-body">
                 <div class="row">
@@ -120,7 +137,7 @@
                         <div class="form-group">
                             <label for="inputPassword3" class="col-sm-2 control-label">Nama Barang</label>
                             <div class="col-sm-6">
-                               <textarea class="form-control" rows="3" placeholder="Enter ..."></textarea>
+                               <textarea class="form-control input-sm" rows="3" placeholder="Enter ..."></textarea>
                             </div>
                         </div>
                     </div>
