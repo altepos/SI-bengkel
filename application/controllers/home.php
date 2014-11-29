@@ -10,10 +10,9 @@ class Home extends CI_Controller {
 
     public function index()
     {   
-            $dataToShow['fb_url'] = '';
-            
-            //SoedjarwoAli: load the view login 
-            $this->load->view('login', $dataToShow);
+        $data['content'] = $this->load->view('pages/home', '', true);
+        
+        $this->load->view('master_page', $data);
     }
 
     // public function logout()
