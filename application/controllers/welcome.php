@@ -22,6 +22,7 @@ class Welcome extends CI_Controller {
 		$halaman['home'] = $this->load->view('pages/home', '', true);
 		$halaman['belanja'] = $this->load->view('pages/belanja', '', true);
 		$halaman['barang'] = $this->load->view('pages/barang', '', true);
+		$halaman['kategori'] = $this->load->view('pages/kategori', '', true);
 		$data['content'] = $halaman[$namaHalaman];
 		$this->load->view('master_page', $data);
 	}
