@@ -241,7 +241,7 @@
 
         </div><!-- /.col (left) -->
     </div><!-- /.row (main row) -->
-
+</section>
 
 <div class="modal fade bs-example-modal-lg" id="add-barang" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
