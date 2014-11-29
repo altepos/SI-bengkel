@@ -21,9 +21,9 @@
                 <!-- small box -->
                 <div class="small-box bg-aqua">
                     <div class="inner">
-                        <h4>
+                        <h3 class="menu">
                             Pembelian
-                        </h4>
+                        </h3>
                         <p>
                             &nbsp;
                         </p>
@@ -40,9 +40,9 @@
                 <!-- small box -->
                 <div class="small-box bg-green">
                     <div class="inner">
-                        <h4>
+                        <h3 class="menu">
                             Penjualan
-                        </h4>
+                        </h3>
                         <p>
                             &nbsp;
                         </p>
@@ -59,9 +59,9 @@
                 <!-- small box -->
                 <div class="small-box bg-aqua">
                     <div class="inner">
-                        <h4>
+                        <h3 class="menu">
                             Daftar barang
-                        </h4>
+                        </h3>
                         <p>
                             &nbsp;
                         </p>
@@ -78,9 +78,9 @@
                 <!-- small box -->
                 <div class="small-box bg-red">
                     <div class="inner">
-                        <h4>
+                        <h3 class="menu">
                             Laporan
-                        </h4>
+                        </h3>
                         <p>
                             &nbsp;
                         </p>
@@ -97,9 +97,9 @@
                 <!-- small box -->
                 <div class="small-box bg-yellow">
                     <div class="inner">
-                        <h4>
+                        <h3 class="menu">
                             Laporan jasa teknisi
-                        </h4>
+                        </h3>
                         <p>
                             &nbsp;
                         </p>
@@ -116,9 +116,9 @@
                 <!-- small box -->
                 <div class="small-box bg-aqua">
                     <div class="inner">
-                        <h4>
+                        <h3 class="menu">
                             Supplier
-                        </h4>
+                        </h3>
                         <p>
                             &nbsp;
                         </p>
@@ -138,9 +138,9 @@
                 <!-- small box -->
                 <div class="small-box bg-aqua">
                     <div class="inner">
-                        <h4>
+                        <h3 class="menu">
                             Kategori barang
-                        </h4>
+                        </h3>
                         <p>
                             &nbsp;
                         </p>
@@ -157,9 +157,9 @@
                 <!-- small box -->
                 <div class="small-box bg-red">
                     <div class="inner">
-                        <h4>
+                        <h3 class="menu">
                             Merek
-                        </h4>
+                        </h3>
                         <p>
                             &nbsp;
                         </p>
@@ -176,9 +176,9 @@
                 <!-- small box -->
                 <div class="small-box bg-yellow">
                     <div class="inner">
-                        <h4>
+                        <h3 class="menu">
                             Daftar pengguna
-                        </h4>
+                        </h3>
                         <p>
                             &nbsp;
                         </p>
@@ -195,9 +195,9 @@
                 <!-- small box -->
                 <div class="small-box bg-green">
                     <div class="inner">
-                        <h4>
+                        <h3 class="menu">
                             Laporan
-                        </h4>
+                        </h3>
                         <p>
                             &nbsp;
                         </p>
@@ -214,9 +214,9 @@
                 <!-- small box -->
                 <div class="small-box bg-aqua">
                     <div class="inner">
-                        <h4>
+                        <h3 class="menu">
                             Setting
-                        </h4>
+                        </h3>
                         <p>
                             &nbsp;
                         </p>
