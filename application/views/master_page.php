@@ -45,6 +45,11 @@
         <!-- iCheck -->
         <script src="<?php echo base_url('assets/js/plugins/iCheck/icheck.min.js') ?>" type="text/javascript"></script>
 
+        <script src="<?php echo base_url('assets/js/plugins/input-mask/jquery.inputmask.js') ?>" type="text/javascript"></script> 
+        <script src="<?php echo base_url('assets/js/plugins/input-mask/jquery.inputmask.date.extensions.js') ?>" type="text/javascript"></script>
+        <script src="<?php echo base_url('assets/js/plugins/input-mask/jquery.inputmask.extensions.js') ?>" type="text/javascript"></script>
+
+
 
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -451,83 +456,83 @@
 
             </aside><!-- /.right-side -->
             <div id="SVGTool-popupImage" class="SVGTool-popupImage modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title" id="myModalLabel">Choose your image to add</h4>
-            </div>
-            <div class="modal-body">
-                <div class="SVGTool-imageList">
-                    <ul>
-                    </ul>
-                </div>
-                <div class="row">
-                    <div id="SVGTool-imagePreviewWrapper" class="col-xs-7 center">
-                        <span>Image will crop as your size on canvas</span>
-                        <canvas id="image-preview" class="SVGTool-imagePreview" >
-                        </canvas>
-                    </div>
-                    <div class="col-xs-5">
-                        <div class="form-group">
-                            <input type="file" id="SVGTool-userImage" name="user-image" class="form-control">
-                            <div id="SVGTool-userImageProgress" class="margin-top dis-none progress upload-progress">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="">
-                                    0%
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title" id="myModalLabel">Choose your image to add</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="SVGTool-imageList">
+                                <ul>
+                                </ul>
+                            </div>
+                            <div class="row">
+                                <div id="SVGTool-imagePreviewWrapper" class="col-xs-7 center">
+                                    <span>Image will crop as your size on canvas</span>
+                                    <canvas id="image-preview" class="SVGTool-imagePreview" >
+                                    </canvas>
+                                </div>
+                                <div class="col-xs-5">
+                                    <div class="form-group">
+                                        <input type="file" id="SVGTool-userImage" name="user-image" class="form-control">
+                                        <div id="SVGTool-userImageProgress" class="margin-top dis-none progress upload-progress">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="">
+                                                0%
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <a id="SVGTool-zoomIn" src="#" class="">
+                                            <i class="fa fa-search-plus"></i> zoom in
+                                        </a>
+                                    </div>
+                                    <div class="form-group">
+                                        <a id="SVGTool-zoomOut" src="#" class="">
+                                            <i class="fa fa-search-minus"></i> zoom out
+                                        </a>
+                                    </div>
+                                    <div class="form-group">
+                                        <a id="SVGTool-rotateRight" src="#" class="">
+                                            <i class="fa fa-rotate-right"></i> rotate right
+                                        </a>
+                                    </div>
+                                    <div class="form-group">
+                                        <a id="SVGTool-rotateLeft" src="#" class="">
+                                            <i class="fa fa-undo"></i> rotate left
+                                        </a>
+                                    </div>
+                                    <div class="form-group">
+                                        <div id="SVGTool-direction" class="button-direction">
+                                            <!-- top -->
+                                            <button id="SVGTool-top" type="button" class="btn btn-default btn-md">
+                                                <span class="glyphicon glyphicon glyphicon-chevron-up"></span>
+                                            </button>
+                                            <!-- left -->
+                                            <button id="SVGTool-right" type="button" class="btn btn-default btn-md">
+                                                <span class="glyphicon glyphicon-chevron-right"></span>
+                                            </button>
+                                            <!-- bottom  -->
+                                            <button id="SVGTool-bottom" type="button" class="btn btn-default btn-md">
+                                                <span class="glyphicon glyphicon glyphicon-chevron-down"></span>
+                                            </button>
+                                            <!-- right -->
+                                            <button id="SVGTool-left" type="button" class="btn btn-default btn-md">
+                                                <span class="glyphicon glyphicon-chevron-left"></span>
+                                            </button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="form-group">
-                            <a id="SVGTool-zoomIn" src="#" class="">
-                                <i class="fa fa-search-plus"></i> zoom in
-                            </a>
-                        </div>
-                        <div class="form-group">
-                            <a id="SVGTool-zoomOut" src="#" class="">
-                                <i class="fa fa-search-minus"></i> zoom out
-                            </a>
-                        </div>
-                        <div class="form-group">
-                            <a id="SVGTool-rotateRight" src="#" class="">
-                                <i class="fa fa-rotate-right"></i> rotate right
-                            </a>
-                        </div>
-                        <div class="form-group">
-                            <a id="SVGTool-rotateLeft" src="#" class="">
-                                <i class="fa fa-undo"></i> rotate left
-                            </a>
-                        </div>
-                        <div class="form-group">
-                            <div id="SVGTool-direction" class="button-direction">
-                                <!-- top -->
-                                <button id="SVGTool-top" type="button" class="btn btn-default btn-md">
-                                    <span class="glyphicon glyphicon glyphicon-chevron-up"></span>
-                                </button>
-                                <!-- left -->
-                                <button id="SVGTool-right" type="button" class="btn btn-default btn-md">
-                                    <span class="glyphicon glyphicon-chevron-right"></span>
-                                </button>
-                                <!-- bottom  -->
-                                <button id="SVGTool-bottom" type="button" class="btn btn-default btn-md">
-                                    <span class="glyphicon glyphicon glyphicon-chevron-down"></span>
-                                </button>
-                                <!-- right -->
-                                <button id="SVGTool-left" type="button" class="btn btn-default btn-md">
-                                    <span class="glyphicon glyphicon-chevron-left"></span>
-                                </button>
-                            </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <button id="SVGTool-applyImage" type="button" class="btn btn-primary">Save changes</button>
+                            <button id="SVGTool-addImage" type="button" class="btn btn-primary">Add image</button>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <button id="SVGTool-applyImage" type="button" class="btn btn-primary">Save changes</button>
-                <button id="SVGTool-addImage" type="button" class="btn btn-primary">Add image</button>
-            </div>
-        </div>
-    </div>
-</div>
         </div><!-- ./wrapper -->
 
         <!-- add new calendar event modal -->
