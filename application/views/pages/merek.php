@@ -1,12 +1,12 @@
 <!-- Content Header (Page header) -->
 <section class="content-header">
     <h1>
-        Kategori
-        <small>daftar kategori</small>
+        Merek
+        <small>daftar merek</small>
     </h1>
     <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li class="active">Daftar kategori</li>
+        <li class="active">merek</li>
     </ol>
 </section>
 
@@ -22,7 +22,7 @@
                 </div>
                 <div class="box-header">
                     <div class="box-title">
-                         <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#add-kategori"><span class="glyphicon glyphicon-plus"></span> Tambah kategori</button>
+                         <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#add-merek"><span class="glyphicon glyphicon-plus"></span> Tambah merek</button>
                     </div>
                     <div class="box-tools">
                         <div class="input-group">
@@ -40,7 +40,7 @@
                                 <thead>
                                     <tr>
                                         <th>ID</th>
-                                        <th>Kategori</th>
+                                        <th>merek</th>
                                         <th>Keterangan</th>
                                         <th>Aksi</th>
                                     </tr>
@@ -51,7 +51,7 @@
                                         <td>John Doe</td>
                                         <td>11-7-2014</td>
                                         <td>
-                                            <button class="btn btn-sm btn-info" data-toggle="modal" data-target="#edit-kategori"><i class="fa fa-edit"></i> Edit</button>
+                                            <button class="btn btn-sm btn-info" data-toggle="modal" data-target="#edit-merek"><i class="fa fa-edit"></i> Edit</button>
                                             <button class="btn btn-sm btn-danger" data-toggle="modal" data-target="#confirmasi-hapus"><i class="fa fa-trash"></i> Delete</button>
                                         </td>
                                     </tr>
@@ -60,7 +60,7 @@
                                         <td>Jane Doe</td>
                                         <td>11-7-2014</td>
                                         <td>
-                                            <button class="btn btn-sm btn-info" data-toggle="modal" data-target="#edit-kategori"><i class="fa fa-edit"></i> Edit</button>
+                                            <button class="btn btn-sm btn-info" data-toggle="modal" data-target="#edit-merek"><i class="fa fa-edit"></i> Edit</button>
                                             <button class="btn btn-sm btn-danger" data-toggle="modal" data-target="#confirmasi-hapus"><i class="fa fa-trash"></i> Delete</button>
                                         </td>
                                     </tr>
@@ -69,7 +69,7 @@
                                         <td>Bob Doe</td>
                                         <td>11-7-2014</td>
                                         <td>
-                                            <button class="btn btn-sm btn-info" data-toggle="modal" data-target="#edit-kategori"><i class="fa fa-edit"></i> Edit</button>
+                                            <button class="btn btn-sm btn-info" data-toggle="modal" data-target="#edit-merek"><i class="fa fa-edit"></i> Edit</button>
                                             <button class="btn btn-sm btn-danger" data-toggle="modal" data-target="#confirmasi-hapus"><i class="fa fa-trash"></i> Delete</button>
                                         </td>
                                     </tr>
@@ -78,7 +78,7 @@
                                         <td>Mike Doe</td>
                                         <td>11-7-2014</td>
                                         <td>
-                                            <button class="btn btn-sm btn-info" data-toggle="modal" data-target="#edit-kategori"><i class="fa fa-edit"></i> Edit</button>
+                                            <button class="btn btn-sm btn-info" data-toggle="modal" data-target="#edit-merek"><i class="fa fa-edit"></i> Edit</button>
                                             <button class="btn btn-sm btn-danger" data-toggle="modal" data-target="#confirmasi-hapus"><i class="fa fa-trash"></i> Delete</button>
                                         </td>
                                     </tr>
@@ -108,20 +108,20 @@
         </div><!-- /.col (left) -->
     </div><!-- /.row (main row) -->
 </section>
-<div class="modal fade bs-example-modal-lg" id="add-kategori" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal fade bs-example-modal-lg" id="add-merek" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h3 class="modal-title" id="myModalLabel">Form tambah kategori</h3>
+                <h3 class="modal-title" id="myModalLabel">Form tambah merek</h3>
             </div>
             <div class="modal-body">
                 <div class="row">
                     <div class="col-md-10 col-md-offset-1 form-horizontal" role="form">
                         <div class="form-group">
-                            <label for="inputEmail3" class="col-sm-3 control-label">Nama kategori</label>
+                            <label for="inputEmail3" class="col-sm-3 control-label">Nama merek</label>
                             <div class="col-sm-6">
-                                <input type="text" class="form-control input-sm" id="inputEmail3" placeholder="Kategori">
+                                <input type="text" class="form-control input-sm" id="inputEmail3" placeholder="merek">
                             </div>
                         </div>
                         <div class="form-group">
@@ -140,20 +140,20 @@
         </div>
     </div>
 </div>
-<div class="modal fade bs-example-modal-lg" id="edit-kategori" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal fade bs-example-modal-lg" id="edit-merek" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h3 class="modal-title" id="myModalLabel">Form tambah kategori</h3>
+                <h3 class="modal-title" id="myModalLabel">Form tambah merek</h3>
             </div>
             <div class="modal-body">
                 <div class="row">
                     <div class="col-md-10 col-md-offset-1 form-horizontal" role="form">
                         <div class="form-group">
-                            <label for="inputEmail3" class="col-sm-2 control-label">Nama kategori</label>
+                            <label for="inputEmail3" class="col-sm-2 control-label">Nama merek</label>
                             <div class="col-sm-6">
-                                <input type="text" class="form-control input-sm" id="inputEmail3" placeholder="Kategori">
+                                <input type="text" class="form-control input-sm" id="inputEmail3" placeholder="merek">
                             </div>
                         </div>
                         <div class="form-group">
