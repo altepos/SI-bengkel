@@ -2,7 +2,7 @@
 <section class="content-header">
     <h1>
         Merek
-        <small>daftar merek</small>
+        <small>&nbsp;</small>
     </h1>
     <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
@@ -18,11 +18,11 @@
         <div class="col-md-12">
             <div class="box box-info">
                 <div class="box-header">
-                    <h3 class="box-title">&nbsp;</h3>
+                    <h3 class="box-title"><i class="fa fa-tag"></i> Daftar merek</h3>
                 </div>
                 <div class="box-header">
                     <div class="box-title">
-                         <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#add-merek"><span class="glyphicon glyphicon-plus"></span> Tambah merek</button>
+                         <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#add-merek"><span class="glyphicon glyphicon-plus"></span> &nbsp;Tambah merek</button>
                     </div>
                     <div class="box-tools">
                         <div class="input-group">
@@ -116,22 +116,32 @@
                 <h3 class="modal-title" id="myModalLabel">Form tambah merek</h3>
             </div>
             <div class="modal-body">
+                <br>
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1">
+                        <div class="alert alert-success alert-dismissable">
+                            <i class="fa fa-check"></i>
+                            <b>Alert!</b> Success alert preview. This alert is dismissable.
+                        </div>
+                    </div>
+                </div>
                 <div class="row">
                     <div class="col-md-10 col-md-offset-1 form-horizontal" role="form">
                         <div class="form-group">
-                            <label for="inputEmail3" class="col-sm-3 control-label">Nama merek</label>
-                            <div class="col-sm-6">
-                                <input type="text" class="form-control input-sm" id="inputEmail3" placeholder="merek">
+                            <label for="inputEmail3" class="col-sm-2 control-label">Nama</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control input-sm" id="inputEmail3" placeholder="Merek">
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="inputPassword3" class="col-sm-3 control-label">Nama Barang</label>
-                            <div class="col-sm-6">
+                            <label for="inputPassword3" class="col-sm-2 control-label">Deskripsi</label>
+                            <div class="col-sm-9">
                                <textarea class="form-control input-sm" rows="3" placeholder="Enter ..."></textarea>
                             </div>
                         </div>
                     </div>
                 </div>
+                
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -148,17 +158,26 @@
                 <h3 class="modal-title" id="myModalLabel">Form tambah merek</h3>
             </div>
             <div class="modal-body">
+                <br>
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1">
+                        <div class="alert alert-success alert-dismissable">
+                            <i class="fa fa-check"></i>
+                            <b>Alert!</b> Success alert preview. This alert is dismissable.
+                        </div>
+                    </div>
+                </div>
                 <div class="row">
                     <div class="col-md-10 col-md-offset-1 form-horizontal" role="form">
                         <div class="form-group">
-                            <label for="inputEmail3" class="col-sm-2 control-label">Nama merek</label>
-                            <div class="col-sm-6">
+                            <label for="inputEmail3" class="col-sm-2 control-label">Nama</label>
+                            <div class="col-sm-9">
                                 <input type="text" class="form-control input-sm" id="inputEmail3" placeholder="merek">
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="inputPassword3" class="col-sm-2 control-label">Nama Barang</label>
-                            <div class="col-sm-6">
+                            <label for="inputPassword3" class="col-sm-2 control-label">Descripsi</label>
+                            <div class="col-sm-9">
                                <textarea class="form-control input-sm" rows="3" placeholder="Enter ..."></textarea>
                             </div>
                         </div>
@@ -177,7 +196,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h3 class="modal-title" id="myModalLabel">Hapus Barang</h3>
+                <h3 class="modal-title" id="myModalLabel">Hapus Merek</h3>
             </div>
             <div class="modal-body">
                 <div class="row">
