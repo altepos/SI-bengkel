@@ -9,7 +9,7 @@ class Merek extends CI_Controller {
 
     public function index()
     {               
-        $merek = new Merek();
+        $merek = new Merek_model();
         $merek->nama = 'jajal ban';
         $merek->save();
 

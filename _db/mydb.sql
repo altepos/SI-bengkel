@@ -1,247 +1,223 @@
--- phpMyAdmin SQL Dump
--- version 4.2.11
--- http://www.phpmyadmin.net
---
--- Host: localhost
--- Generation Time: Dec 11, 2014 at 01:16 PM
--- Server version: 5.6.21
--- PHP Version: 5.6.3
+-- MySQL Workbench Forward Engineering
 
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET time_zone = "+00:00";
+SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
+SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
+SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='TRADITIONAL,ALLOW_INVALID_DATES';
 
+-- -----------------------------------------------------
+-- Schema mydb
+-- -----------------------------------------------------
+DROP SCHEMA IF EXISTS `mydb` ;
 
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8 */;
+-- -----------------------------------------------------
+-- Schema mydb
+-- -----------------------------------------------------
+CREATE SCHEMA IF NOT EXISTS `mydb` ;
+SHOW WARNINGS;
+USE `mydb` ;
 
---
--- Database: `mydb`
---
+-- -----------------------------------------------------
+-- Table `role`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS `role` ;
 
--- --------------------------------------------------------
-
---
--- Table structure for table `barang`
---
-
-CREATE TABLE IF NOT EXISTS `barang` (
-  `id` int(11) NOT NULL,
-  `barcode` varchar(45) DEFAULT NULL,
-  `nama` varchar(200) DEFAULT NULL,
-  `deskripsi` text,
-  `harga_jual` int(11) DEFAULT NULL,
-  `total_stok` int(11) DEFAULT NULL,
-  `jasa` int(11) DEFAULT NULL,
-  `potongan_harga` int(11) DEFAULT NULL,
-  `letak_gudang` varchar(45) DEFAULT NULL,
-  `merek_id` int(11) NOT NULL,
-  `kategori_id` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `belanja`
---
-
-CREATE TABLE IF NOT EXISTS `belanja` (
-  `id` int(11) NOT NULL,
-  `tanggal` int(11) DEFAULT NULL,
-  `total` int(11) DEFAULT NULL,
-  `user_id` int(11) NOT NULL,
-  `supplier_id` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `kategori`
---
-
-CREATE TABLE IF NOT EXISTS `kategori` (
-  `id` int(11) NOT NULL,
-  `nama` varchar(100) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `merek`
---
-
-CREATE TABLE IF NOT EXISTS `merek` (
-  `id` int(11) NOT NULL,
-  `nama` varchar(45) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `phone`
---
-
-CREATE TABLE IF NOT EXISTS `phone` (
-  `id` int(11) NOT NULL,
-  `no_telp` varchar(45) DEFAULT NULL,
-  `user_id` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `role`
---
-
+SHOW WARNINGS;
 CREATE TABLE IF NOT EXISTS `role` (
-  `id` int(11) NOT NULL,
-  `role` varchar(45) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `role` VARCHAR(45) NULL,
+  PRIMARY KEY (`id`))
+ENGINE = InnoDB;
 
--- --------------------------------------------------------
+SHOW WARNINGS;
 
---
--- Table structure for table `status`
---
+-- -----------------------------------------------------
+-- Table `user`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS `user` ;
 
-CREATE TABLE IF NOT EXISTS `status` (
-  `id` int(11) NOT NULL,
-  `status` varchar(45) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `supplier`
---
-
-CREATE TABLE IF NOT EXISTS `supplier` (
-  `id` int(11) NOT NULL,
-  `nama` varchar(200) DEFAULT NULL,
-  `alamat` text,
-  `no_telp` varchar(45) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `transaksi`
---
-
-CREATE TABLE IF NOT EXISTS `transaksi` (
-  `id` int(11) NOT NULL,
-  `cash_pay` int(11) DEFAULT NULL,
-  `cash_back` int(11) DEFAULT NULL,
-  `tanggal` varchar(45) DEFAULT NULL,
-  `user_id` int(11) NOT NULL,
-  `status_id` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `transaksi_detail`
---
-
-CREATE TABLE IF NOT EXISTS `transaksi_detail` (
-  `id` int(11) NOT NULL,
-  `harga_terjual` int(11) DEFAULT NULL,
-  `jumlah_terjual` int(11) DEFAULT NULL,
-  `transaksi_id` int(11) NOT NULL,
-  `belanja_id` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `user`
---
-
+SHOW WARNINGS;
 CREATE TABLE IF NOT EXISTS `user` (
-  `id` int(11) NOT NULL,
-  `username` varchar(45) DEFAULT NULL,
-  `password` varchar(45) DEFAULT NULL,
-  `nama_depan` varchar(45) DEFAULT NULL,
-  `nama_belakang` varchar(45) DEFAULT NULL,
-  `email` varchar(45) DEFAULT NULL,
-  `alamat` varchar(45) DEFAULT NULL,
-  `no_identitas` varchar(45) DEFAULT NULL,
-  `terakhir_login` datetime DEFAULT NULL,
-  `tanggal_dibuat` varchar(45) DEFAULT NULL,
-  `role_id` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `username` VARCHAR(45) NULL,
+  `password` VARCHAR(45) NULL,
+  `nama_depan` VARCHAR(45) NULL,
+  `nama_belakang` VARCHAR(45) NULL,
+  `email` VARCHAR(45) NULL,
+  `alamat` VARCHAR(45) NULL,
+  `no_identitas` VARCHAR(45) NULL,
+  `terakhir_login` DATETIME NULL,
+  `tanggal_dibuat` VARCHAR(45) NULL,
+  `role_id` INT NOT NULL,
+  PRIMARY KEY (`id`))
+ENGINE = InnoDB;
 
---
--- Indexes for dumped tables
---
+SHOW WARNINGS;
 
---
--- Indexes for table `barang`
---
-ALTER TABLE `barang`
- ADD PRIMARY KEY (`id`);
+-- -----------------------------------------------------
+-- Table `merek`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS `merek` ;
 
---
--- Indexes for table `belanja`
---
-ALTER TABLE `belanja`
- ADD PRIMARY KEY (`id`);
+SHOW WARNINGS;
+CREATE TABLE IF NOT EXISTS `merek` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `nama` VARCHAR(45) NULL,
+  PRIMARY KEY (`id`))
+ENGINE = InnoDB;
 
---
--- Indexes for table `kategori`
---
-ALTER TABLE `kategori`
- ADD PRIMARY KEY (`id`);
+SHOW WARNINGS;
 
---
--- Indexes for table `merek`
---
-ALTER TABLE `merek`
- ADD PRIMARY KEY (`id`);
+-- -----------------------------------------------------
+-- Table `kategori`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS `kategori` ;
 
---
--- Indexes for table `phone`
---
-ALTER TABLE `phone`
- ADD PRIMARY KEY (`id`);
+SHOW WARNINGS;
+CREATE TABLE IF NOT EXISTS `kategori` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `nama` VARCHAR(100) NULL,
+  PRIMARY KEY (`id`))
+ENGINE = InnoDB;
 
---
--- Indexes for table `role`
---
-ALTER TABLE `role`
- ADD PRIMARY KEY (`id`);
+SHOW WARNINGS;
 
---
--- Indexes for table `status`
---
-ALTER TABLE `status`
- ADD PRIMARY KEY (`id`);
+-- -----------------------------------------------------
+-- Table `barang`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS `barang` ;
 
---
--- Indexes for table `supplier`
---
-ALTER TABLE `supplier`
- ADD PRIMARY KEY (`id`);
+SHOW WARNINGS;
+CREATE TABLE IF NOT EXISTS `barang` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `barcode` VARCHAR(45) NULL,
+  `nama` VARCHAR(200) NULL,
+  `deskripsi` TEXT NULL,
+  `harga_jual` INT NULL,
+  `total_stok` INT NULL,
+  `jasa` INT NULL,
+  `potongan_harga` INT NULL,
+  `letak_gudang` VARCHAR(45) NULL,
+  `merek_id` INT NOT NULL,
+  `kategori_id` INT NOT NULL,
+  PRIMARY KEY (`id`))
+ENGINE = InnoDB;
 
---
--- Indexes for table `transaksi`
---
-ALTER TABLE `transaksi`
- ADD PRIMARY KEY (`id`);
+SHOW WARNINGS;
 
---
--- Indexes for table `transaksi_detail`
---
-ALTER TABLE `transaksi_detail`
- ADD PRIMARY KEY (`id`);
+-- -----------------------------------------------------
+-- Table `status`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS `status` ;
 
---
--- Indexes for table `user`
---
-ALTER TABLE `user`
- ADD PRIMARY KEY (`id`);
+SHOW WARNINGS;
+CREATE TABLE IF NOT EXISTS `status` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `status` VARCHAR(45) NULL,
+  PRIMARY KEY (`id`))
+ENGINE = InnoDB;
 
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+SHOW WARNINGS;
+
+-- -----------------------------------------------------
+-- Table `transaksi`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS `transaksi` ;
+
+SHOW WARNINGS;
+CREATE TABLE IF NOT EXISTS `transaksi` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `cash_pay` INT NULL,
+  `cash_back` INT NULL,
+  `tanggal` VARCHAR(45) NULL,
+  `user_id` INT NOT NULL,
+  `status_id` INT NOT NULL,
+  PRIMARY KEY (`id`))
+ENGINE = InnoDB;
+
+SHOW WARNINGS;
+
+-- -----------------------------------------------------
+-- Table `supplier`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS `supplier` ;
+
+SHOW WARNINGS;
+CREATE TABLE IF NOT EXISTS `supplier` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `nama` VARCHAR(200) NULL,
+  `alamat` TEXT NULL,
+  `no_telp` VARCHAR(45) NULL,
+  PRIMARY KEY (`id`))
+ENGINE = InnoDB;
+
+SHOW WARNINGS;
+
+-- -----------------------------------------------------
+-- Table `belanja`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS `belanja` ;
+
+SHOW WARNINGS;
+CREATE TABLE IF NOT EXISTS `belanja` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `tanggal` INT NULL,
+  `total` INT NULL,
+  `user_id` INT NOT NULL,
+  `supplier_id` INT NOT NULL,
+  PRIMARY KEY (`id`))
+ENGINE = InnoDB;
+
+SHOW WARNINGS;
+
+-- -----------------------------------------------------
+-- Table `belanja_detail`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS `belanja_detail` ;
+
+SHOW WARNINGS;
+CREATE TABLE IF NOT EXISTS `belanja_detail` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `stok_masuk` INT NULL,
+  `harga_beli` INT NULL,
+  `barang_id` INT NOT NULL,
+  `belanja_id` INT NOT NULL,
+  PRIMARY KEY (`id`))
+ENGINE = InnoDB;
+
+SHOW WARNINGS;
+
+-- -----------------------------------------------------
+-- Table `transaksi_detail`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS `transaksi_detail` ;
+
+SHOW WARNINGS;
+CREATE TABLE IF NOT EXISTS `transaksi_detail` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `harga_terjual` INT NULL,
+  `jumlah_terjual` INT NULL,
+  `transaksi_id` INT NOT NULL,
+  `belanja_id` INT NOT NULL,
+  PRIMARY KEY (`id`))
+ENGINE = InnoDB;
+
+SHOW WARNINGS;
+
+-- -----------------------------------------------------
+-- Table `phone`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS `phone` ;
+
+SHOW WARNINGS;
+CREATE TABLE IF NOT EXISTS `phone` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `no_telp` VARCHAR(45) NULL,
+  `user_id` INT NOT NULL,
+  PRIMARY KEY (`id`))
+ENGINE = InnoDB;
+
+SHOW WARNINGS;
+
+SET SQL_MODE=@OLD_SQL_MODE;
+SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
+SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
