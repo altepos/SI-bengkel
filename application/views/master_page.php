@@ -59,6 +59,10 @@
         <![endif]-->
     </head>
     <body class="skin-blue">
+
+        <input id="base-url" type="hidden" value="<?php echo base_url(); ?>">
+        <input id="site-url" type="hidden" value="<?php echo site_url('/'); ?>">
+
         <!-- header logo: style can be found in header.less -->
         <header class="header">
             <a href="index.html" class="logo">
