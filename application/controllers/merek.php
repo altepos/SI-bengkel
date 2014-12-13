@@ -2,18 +2,16 @@
 
 class Merek extends CI_Controller {
 
-    var $merek = null;
-
     public function __construct()
     {
         parent::__construct();
-        $this->merek = new Merek_model();
 
+        $this->load->model(array('merek_model' => 'merek_model'));
     }
 
     public function index()
     {               
-        $contentData['data_list']   = $this->merek->get();
+        $contentData['data_list']   = $this->merek_model->getAll()->result();
 
         $data['content']            = $this->load->view('pages/merek', $contentData, true);
 
@@ -25,15 +23,14 @@ class Merek extends CI_Controller {
         $nama       = $this->input->post('nama');
         $keterangan = $this->input->post('keterangan');
 
-        $this->merek->nama          = $nama;
-        // $this->merek->keterangan    = $keterangan;
+        $inserData  = array(
+                'nama'          => $nama,
+                // 'keterangan'    => $keterangan
+            );
 
-        $success = $this->merek->save();
+        $result = $this->merek_model->save($inserData);
 
-        if ($success)
-            echo json_encode(array('status' => $success, 'message' => 'Input data success...'));
-        else
-            echo json_encode(array('status' => $success, 'message' => 'Input data failed...'));
+        echo $result;
     }
 
     public function edit()
@@ -42,32 +39,23 @@ class Merek extends CI_Controller {
         $nama       = $this->input->post('nama');
         $keterangan = $this->input->post('keterangan');
 
-        $this->merek->id    = $id;
-        $this->merek->nama  = $nama;
-        // $this->merek->keterangan    = $keterangan;
+        $updateData  = array(
+                'nama'  => $nama,
+                // 'keterangan'    => $keterangan
+            );
 
-        $success = $this->merek->save();
+        $result = $this->merek_model->update($id, $updateData);
 
-        if ($success)
-            echo json_encode(array('status' => $success, 'message' => 'Edit data success...'));
-        else
-            echo json_encode(array('status' => $success, 'message' => 'Edit data failed...'));
+        echo $result;
     }
 
     public function delete()
     {
         $id         = $this->input->post('id');
-        $this->merek->where('id', $id)->get();
 
-        $barang     = new Barang_model();
-        $barang->where('merek_id', $id)->get();
-
-        $success    = $this->merek->delete($barang->all);
-
-        if ($success)
-            echo json_encode(array('status' => $success, 'message' => 'Delete data success...'));
-        else
-            echo json_encode(array('status' => $success, 'message' => 'Delete data failed...'));
+        $result    = $this->merek_model->delete($id);
+        
+        echo $result;
     }
 }
 

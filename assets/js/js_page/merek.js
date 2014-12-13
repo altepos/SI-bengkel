@@ -25,9 +25,12 @@ $('#add-merek')
 				$('#add-merek').find('.message').html(response.message)
 			};
 
-			$('#add-merek').find('.alert').slideToggle().delay(5000).queue(function(n) {
+			$('#add-merek').find('.alert').slideToggle().delay(2000).queue(function(n) {
 			  	$(this).slideToggle().delay(500).queue(function(n) {
 				  	$('#add-merek').modal('hide');
+				  	$('#add-merek').on('hidden.bs.modal', function() {
+				  		window.location.reload();
+				  	});
 			  	}); n();
 
 			  	// reset field 
@@ -62,9 +65,12 @@ $('#edit-merek')
 				$('#edit-merek').find('.message').html(response.message)
 			};
 
-			$('#edit-merek').find('.alert').slideToggle().delay(5000).queue(function(n) {
+			$('#edit-merek').find('.alert').slideToggle().delay(2000).queue(function(n) {
 			  	$(this).slideToggle().delay(500).queue(function(n) {
 				  	$('#edit-merek').modal('hide');
+				  	$('#edit-merek').on('hidden.bs.modal', function() {
+				  		window.location.reload();
+				  	});
 			  	}); n();
 
 			  	// reset field 
@@ -111,23 +117,11 @@ $('#delete-merek')
 		}).done(function(response) {
 			
 			if (response.status) {
-				$('#edit-merek').find('.alert').removeClass('alert-danger').addClass('alert-success');
-				$('#edit-merek').find('.message').html(response.message)
-			} else {
-				$('#edit-merek').find('.alert').removeClass('alert-success').addClass('alert-alert');
-				$('#edit-merek').find('.message').html(response.message)
-			};
-
-			$('#edit-merek').find('.alert').slideToggle().delay(5000).queue(function(n) {
-			  	$(this).slideToggle().delay(500).queue(function(n) {
-				  	$('#edit-merek').modal('hide');
-			  	}); n();
-
-			  	// reset field 
-			  	$('#edit-merek').find('#edit-merek-id').val('');
-			  	$('#edit-merek').find('#edit-merek-nama').val('');
-			  	$('#edit-merek').find('#edit-merek-keterangan').val('');
-			});
+				$('#delete-merek').modal('hide');
+				$('#delete-merek').on('hidden.bs.modal', function() {
+			  		window.location.reload();
+			  	});
+			}
 		});
 	});
 

@@ -37,7 +37,7 @@
 |
 */
 
-$autoload['packages'] = array(APPPATH.'third_party/datamapper');
+$autoload['packages'] = array();
 
 
 /*
@@ -52,7 +52,7 @@ $autoload['packages'] = array(APPPATH.'third_party/datamapper');
 |	$autoload['libraries'] = array('database', 'session', 'xmlrpc');
 */
 
-$autoload['libraries'] = array('database', 'datamapper');
+$autoload['libraries'] = array('database');
 
 
 /*
