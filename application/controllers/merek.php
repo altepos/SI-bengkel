@@ -58,7 +58,7 @@ class Merek extends CI_Controller {
         echo $result;
     }
 
-    
+    // tambah comment 
     function pagination()
     {
         $config['base_url']         = base_url() . "index.php/_design/category/index";
