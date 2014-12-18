@@ -113,6 +113,4 @@ class Merek_model extends CI_Model {
             ->order_by($this->table . '.id', 'DESC')
             ->get_where($this->table, $condition, $limit, $offset);
     }
-
-
 }
