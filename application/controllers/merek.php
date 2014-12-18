@@ -58,7 +58,7 @@ class Merek extends CI_Controller {
         echo $result;
     }
 
-    
+
     function pagination()
     {
         $config['base_url']         = base_url() . "index.php/_design/category/index";
@@ -83,6 +83,7 @@ class Merek extends CI_Controller {
         $config['last_tag_close']   = '</li>';
         $this->pagination->initialize( $config ); 
         return $config;
+        
     }
 
     // config data to show all 
