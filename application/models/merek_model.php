@@ -113,4 +113,21 @@ class Merek_model extends CI_Model {
             ->order_by($this->table . '.id', 'DESC')
             ->get_where($this->table, $condition, $limit, $offset);
     }
+
+    public function getByName($search_term  = '', $limit = null, $offset = null)
+    {
+        return $this->db
+            ->order_by($this->table . '.id', 'DESC')
+            ->like('nama', $search_term, 'after')
+            ->get($this->table, $limit, $offset);
+    }   
+
+    public function ajaxGetByName($search_term = '', $limit = null, $offset = null)
+    {
+        return $this->db
+            ->select('nama')
+            ->order_by($this->table . '.nama', 'ASC')
+            ->like('nama', $search_term, 'after')
+            ->get($this->table);
+    } 
 }

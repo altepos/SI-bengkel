@@ -25,12 +25,12 @@
                          <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#add-merek"><span class="glyphicon glyphicon-plus"></span> &nbsp;Tambah merek</button>
                     </div>
                     <div class="box-tools">
-                        <div class="input-group">
-                            <input type="text" name="table_search" class="form-control input-sm pull-right" style="width: 150px;" placeholder="Search"/>
+                        <?php echo form_open('merek/findByName', array('class' => 'input-group', 'method' => 'GET')); ?>
+                            <input id="merek_auto" type="text" name="search_term" class="form-control input-sm pull-right" style="width: 300px;" placeholder="Search"/>
                             <div class="input-group-btn">
-                                <button class="btn btn-sm btn-default"><i class="fa fa-search"></i></button>
+                                <button type="submit" class="btn btn-sm btn-default"><i class="fa fa-search"></i></button>
                             </div>
-                        </div>
+                        <?php echo form_close(); ?>
                     </div>
                 </div>
                 <div class="box-body table-responsive">
@@ -47,10 +47,12 @@
                                 </thead>
                                 <tbody>
                                     <?php 
+                                    $offset = $this->input->get('per_page', TRUE);
+
                                     foreach ($data_list as $key => $merek) {
                                     ?>
                                         <tr>
-                                            <td><?php echo ($key + 1) ?></td>
+                                            <td><?php echo ($key + 1 + $offset) ?></td>
                                             <td><?php echo $merek->nama ?></td>
                                             <td>-</td>
                                             <td>

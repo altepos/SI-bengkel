@@ -8,23 +8,53 @@ class Merek extends CI_Controller {
 
         $this->load->model(array('merek_model' => 'merek_model'));
 
-        $this->load->library('pagination');
     }
 
     public function showList()
     {    
-        $limit  = 1;           
-        $offset = $this->uri->segment(3);
+        $limit  = 10;
+
+        $offset = $this->input->get('per_page', TRUE);
 
         $merek_list = $this->merek_model;
-        
+
         $contentData['data_list']   = $merek_list->getAll(null, $limit, $offset)->result();
 
-        $contentData['pagination']     = $this->init_pagination($merek_list->getAll(), $limit, $offset);
+        $contentData['pagination']     = $this->init_pagination($merek_list->getAll(), "merek/showList?", $limit, $offset);
 
         $data['content']        = $this->load->view('pages/merek', $contentData, true);
-        echo $contentData['pagination'];
-        // $this->load->view('master_page', $data);
+
+        $this->load->view('master_page', $data);
+    }
+
+    public function findByName()
+    {
+        $search_term = $this->input->get('search_term', TRUE);
+        
+        $offset = $this->input->get('per_page', TRUE);
+
+        $limit  = 5;
+
+        $offset = $offset ? $offset : 0;
+
+        $contentData['data_list']   = $this->merek_model->getByName($search_term, $limit, $offset)->result();
+        
+        $uri = "merek/findByName?search_term=" . $search_term; 
+
+        $contentData['pagination']  = $this->init_pagination($this->merek_model->getByName($search_term), $uri, $limit, $offset);
+
+        $data['content']        = $this->load->view('pages/merek', $contentData, true);
+
+        $this->load->view('master_page', $data);
+    }
+
+    public function ajaxFindByName()
+    {
+        $search_term = $this->input->get('term', TRUE);
+        
+        $data = $this->merek_model->ajaxGetByName($search_term, 10, 0)->result_array();
+
+        echo json_encode($data);
     }
 
     public function insert()
@@ -44,6 +74,7 @@ class Merek extends CI_Controller {
 
     public function edit()
     {
+
         $id         = $this->input->post('id');
         $nama       = $this->input->post('nama');
         $keterangan = $this->input->post('keterangan');
@@ -67,12 +98,14 @@ class Merek extends CI_Controller {
         echo $result;
     }
 
-function pagination()
+    public function init_pagination($data, $uri, $limit = 5, $offset = 0)
     {
-        $config['base_url']         = base_url() . "index.php/_design/category/index";
-        $config['total_rows']       = $this->category->select()->num_rows();
-        $config['per_page']         = 5; 
-        $config["uri_segment"]      = 4;
+        $this->load->library('pagination');
+
+        $config['base_url']         = site_url() . $uri;
+        $config['total_rows']       = $data->num_rows();
+        $config['per_page']         = $limit; 
+
         $config['first_link']       = 'First';
         $config['first_tag_open']   = '<li>';
         $config['first_tag_close']  = '</li>';
@@ -89,22 +122,11 @@ function pagination()
         $config['last_link']        = 'Last';
         $config['last_tag_open']    = '<li>';
         $config['last_tag_close']   = '</li>';
+        $config['page_query_string'] = TRUE;
+
         $this->pagination->initialize( $config ); 
-        return $config;
-    }
 
-    // config data to show all 
-    function default_data()
-    {
-        $config                             = $this->pagination();
-        $page                               = ($this->uri->segment( $config["uri_segment"] )) ? $this->uri->segment( $config["uri_segment"] ) : 0;
-
-        $data["data_table"]                 = $this->category->select_by_limit( $config['per_page'], $page )->result();
-        $data["links"]                      = "<ul class='pagination'>" . $this->pagination->create_links() . "</ul>";
-        $data["form_data"]                  = array();
-        $data["content_template"]           = "/admin/category/category_view";
-
-        return $data;
+        return "<ul class='pagination pagination-sm no-margin pull-right'>" . $this->pagination->create_links() . "</ul>";
     }
 }
 

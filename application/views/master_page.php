@@ -18,9 +18,9 @@
         <link href="<?php echo base_url('assets/css/daterangepicker/daterangepicker-bs3.css') ?>" rel="stylesheet" type="text/css" />
         <!-- bootstrap wysihtml5 - text editor -->
         <link href="<?php echo base_url('assets/css/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css') ?>" rel="stylesheet" type="text/css" />
+        <link href="<?php echo base_url('assets/css/jqueryui/jquery-ui.css') ?>" rel="stylesheet" type="text/css" />
         <!-- Theme style -->
         <link href="<?php echo base_url('assets/css/AdminLTE.css') ?>" rel="stylesheet" type="text/css" />
-
         <script src="<?php echo base_url('assets/js/plugins/jquery/jquery-2.1.1.min.js') ?>"></script>
         <!-- add new calendar event modal -->
 
