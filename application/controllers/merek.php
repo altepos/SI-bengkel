@@ -10,6 +10,11 @@ class Merek extends CI_Controller {
 
     }
 
+    public function index()
+    {
+        redirect('merek/showList');
+    }
+
     public function showList()
     {    
         $limit  = 10;

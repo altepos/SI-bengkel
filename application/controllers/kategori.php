@@ -10,6 +10,11 @@ class Kategori extends CI_Controller {
 
     }
 
+    public function index()
+    {
+        redirect('kategori/showList');
+    }
+
     public function showList()
     {    
         $limit  = 10;
