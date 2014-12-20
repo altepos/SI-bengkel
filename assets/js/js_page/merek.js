@@ -28,7 +28,7 @@ $(document).ready(function(){
 					$('#add-merek').find('.message').html(response.message)
 				};
 
-				$('#add-merek').find('.alert').slideToggle().delay(2000).queue(function(n) {
+				$('#add-merek').find('.alert').slideToggle().delay(1000).queue(function(n) {
 				  	$(this).slideToggle().delay(500).queue(function(n) {
 					  	$('#add-merek').modal('hide');
 					  	$('#add-merek').on('hidden.bs.modal', function() {
@@ -68,7 +68,7 @@ $(document).ready(function(){
 					$('#edit-merek').find('.message').html(response.message)
 				};
 
-				$('#edit-merek').find('.alert').slideToggle().delay(2000).queue(function(n) {
+				$('#edit-merek').find('.alert').slideToggle().delay(1000).queue(function(n) {
 				  	$(this).slideToggle().delay(500).queue(function(n) {
 					  	$('#edit-merek').modal('hide');
 					  	$('#edit-merek').on('hidden.bs.modal', function() {

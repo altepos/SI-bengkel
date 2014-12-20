@@ -33,7 +33,7 @@ class Merek extends CI_Controller {
         
         $offset = $this->input->get('per_page', TRUE);
 
-        $limit  = 5;
+        $limit  = 10;
 
         $offset = $offset ? $offset : 0;
 
