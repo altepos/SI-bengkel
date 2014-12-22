@@ -1,8 +1,8 @@
 <!-- Content Header (Page header) -->
                 <section class="content-header hidden">
                     <h1>
-                        User
-                        <small>Panel User</small>
+                        Supplier
+                        <small>Panel Supplier</small>
                     </h1>
                     <ol class="breadcrumb">
                         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
@@ -20,14 +20,8 @@
                                 <div class="row" style="margin: 0;margin-top: 15px;">
                                     <div class="col-md-2">
                                         <div class="form-horizontal" role="form">
-                                            <div class="form-group">
-                                            <!--     <div class="col-sm-4 text-center icon" >
-                                                    <span class="add-barang glyphicon glyphicon-plus" style ="font-size: 1.8em;padding: 4%;color: #428bca;" aria-hidden="true"></span>
-                                                </div>
-                                                <div class="col-sm-8 text">
-                                                    <h5>Tambah</h5>
-                                                </div> -->
-                                                <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#add-user"><span class="glyphicon glyphicon-plus"></span> &nbsp;Tambah User</button>
+                                            <div class="form-group text-center">
+                                                <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#add-Supplier"><span class="glyphicon glyphicon-plus"></span> &nbsp;Tambah Supplier</button>
                                             </div>
                                         </div>
                                     </div>
@@ -87,102 +81,18 @@
                                     </div>
                                 </div>
                             </div>
-                        <!--     <div class="box box-info add-form hide">
-                                <div class="panel panel-default">
-                                    <div class="panel-body">
-                                        Tambah User
-                                    </div>
-                                </div>
-                                <div class="row" style="margin: 0;margin-top: 15px;">
-                                    <div class="col-md-offset-1 col-md-5">
-                                        <div class="form-horizontal" role="form">
-                                            <div class="form-group">
-                                                <div class="col-sm-6 ">
-                                                    <input type="text" class="form-control" id="inputEmail3" placeholder="Nama Depan">
-                                                </div>
-                                                <div class="col-sm-6">
-                                                    <input type="text" class="form-control" id="inputEmail3" placeholder="Nama Belakang">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-2">
-                                        <div class="form-horizontal" role="form">
-                                            <div class="form-group">
-                                                <div class="col-sm-12">
-                                                    <input type="text" class="form-control" id="inputEmail3" placeholder="Username">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-2">
-                                        <div class="form-horizontal" role="form">
-                                            <div class="form-group">
-                                                <div class="col-sm-12">
-                                                    <input type="password" class="form-control" id="inputEmail3" placeholder="Password">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row" style="margin: 0;margin-top: 15px;">
-                                    <div class="col-md-offset-1 col-md-5">
-                                        <div class="form-horizontal" role="form">
-                                            <div class="form-group">
-                                                <div class="col-sm-12">
-                                                    <input type="text" class="form-control" placeholder="No Identitas">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="form-horizontal" role="form">
-                                            <div class="form-group">
-                                                <div class="col-sm-12">
-                                                    <input type="text" class="form-control" placeholder="Email">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row" style="margin: 0;margin-top: 15px;">
-                                    <div class="col-md-offset-1 col-md-5">
-                                        <div class="form-horizontal" role="form">
-                                            <div class="form-group">
-                                                <div class="col-sm-12 ">
-                                                    <textarea style="margin: 0px; width: 100%; height: 154px;">   Alamat </textarea>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row" style="margin: 0;margin-top: 15px;">
-                                        <div class="col-md-4 col-md-offset-7" style="margin-bottom: 15px;">
-                                            <div class="form-group">
-                                                <div class="col-sm-12">
-                                                    &nbsp;
-                                                    <button class="btn btn-primary btn-lg btn-flat" style="padding : 1% 4%; font-size:12px;">Submit</button>
-                                                    &nbsp;
-                                                    <button class="btn btn-info btn-lg btn-flat" style="padding : 1% 4%; font-size:12px;">Reset</button>
-                                                    &nbsp;
-                                                    <button class="btn btn-default btn-lg btn-flat" style="padding : 1% 4%; font-size:12px;">Cancel</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                </div>
-                            </div> -->
-                            <div class="modal fade bs-example-modal-lg" id="add-user" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal fade bs-example-modal-lg" id="add-Supplier" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                                 <div class="modal-dialog modal-lg">
                                     <div class="modal-content">
                                         <div class="modal-header">
                                             <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                                            <h3 class="modal-title" id="myModalLabel">Add User</h3>
+                                            <h3 class="modal-title" id="myModalLabel">Add Supplier</h3>
                                         </div>
                                         <div class="modal-body">
                                             <div class="row">
                                                 <div class="col-md-10 col-md-offset-1 form-horizontal" role="form">
                                                     <div class="form-group">
-                                                        <label for="inputEmail3" class="col-sm-2 control-label">Nama User</label>
+                                                        <label for="inputEmail3" class="col-sm-2 control-label">Nama Supplier</label>
                                                         <div class="col-sm-6">
                                                             <input type="text" class="form-control input-sm" id="inputEmail3" placeholder="Barcode" value="">
                                                         </div>
@@ -347,12 +257,9 @@
                                                     <thead>
                                                         <tr>
                                                             <th>#</th>
-                                                            <th>Nama User </th>
-                                                            <th>Username </th>
-                                                            <th>Email </th>
+                                                            <th>Nama </th>
+                                                            <th>No Telp</th>
                                                             <th>Alamat</th>
-                                                            <th>No Identitas</th>
-                                                            <th>Terakhir Login</th>
                                                             <th>Manage</th>
                                                         </tr>
                                                     </thead>
@@ -363,15 +270,12 @@
                                                             ?>
                                                                 <tr>
                                                                     <td><?php echo $i?></td>
-                                                                    <td>Nama Depan Nama Belakang <?php echo $i?></td>
-                                                                    <td>Usename <?php echo $i?></td>
-                                                                    <td>Email <?php echo $i?></td>
+                                                                    <td>Nama Supplier<?php echo $i?></td>
+                                                                    <td>No Telp <?php echo $i?></td>
                                                                     <td>Alamat <?php echo $i?></td>
-                                                                    <td>Nomo Identitas <?php echo $i?></td>
-                                                                    <td>Terakhir Login <?php echo $i?></td>
                                                                     <td>
-                                                                        <button class="btn btn-sm btn-default" data-toggle="modal" data-target="#hapus-<?php echo $i?> "><i class="fa fa-trash"></i> Delete User</button>
-                                                                        <button class="btn btn-sm btn-default" data-toggle="modal" data-target="#edit-<?php echo $i?> "><i class="fa fa-edit"></i> Edit User</button>
+                                                                        <button class="btn btn-sm btn-default" data-toggle="modal" data-target="#hapus-<?php echo $i?> "><i class="fa fa-trash"></i> Delete Supplier</button>
+                                                                        <button class="btn btn-sm btn-default" data-toggle="modal" data-target="#edit-<?php echo $i?> "><i class="fa fa-edit"></i> Edit Supplier</button>
                                                                     </td>
                                                                 </tr>
                                                                 <div class="modal fade bs-example-modal-lg" id="edit-<?php echo $i?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -379,21 +283,21 @@
                                                                         <div class="modal-content">
                                                                             <div class="modal-header">
                                                                                 <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                                                                                <h3 class="modal-title" id="myModalLabel">Edit User</h3>
+                                                                                <h3 class="modal-title" id="myModalLabel">Edit Supplier</h3>
                                                                             </div>
                                                                             <div class="modal-body">
                                                                                 <div class="row">
                                                                                     <div class="col-md-10 col-md-offset-1 form-horizontal" role="form">
                                                                                         <div class="form-group">
-                                                                                            <label for="inputEmail3" class="col-sm-2 control-label">Nama User</label>
+                                                                                            <label for="inputEmail3" class="col-sm-2 control-label">Nama Supplier</label>
                                                                                             <div class="col-sm-6">
                                                                                                 <input type="text" class="form-control input-sm" id="inputEmail3" placeholder="Barcode" value="Nama <?php echo $i; ?>">
                                                                                             </div>
                                                                                         </div>
                                                                                         <div class="form-group">
-                                                                                            <label for="inputPassword3" class="col-sm-2 control-label">Username</label>
+                                                                                            <label for="inputPassword3" class="col-sm-2 control-label">Suppliername</label>
                                                                                             <div class="col-sm-6">
-                                                                                              <input type="text" class="form-control input-sm" id="inputPassword3" placeholder="Nama barang" value="Username <?php echo $i; ?>">
+                                                                                              <input type="text" class="form-control input-sm" id="inputPassword3" placeholder="Nama barang" value="Suppliername <?php echo $i; ?>">
                                                                                             </div>
                                                                                         </div>
                                                                                         <div class="form-group">tambah baru
@@ -447,12 +351,12 @@
                                                                         <div class="modal-content">
                                                                             <div class="modal-header">
                                                                                 <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                                                                                <h3 class="modal-title" id="myModalLabel">Hapus User</h3>
+                                                                                <h3 class="modal-title" id="myModalLabel">Hapus Supplier</h3>
                                                                             </div>
                                                                             <div class="modal-body">
                                                                                 <div class="row">
                                                                                     <div class="col-md-10 col-md-offset-1 form-horizontal" role="form">
-                                                                                        Apakah anda yakin akan menghapus User <?php echo $i; ?> ?
+                                                                                        Apakah anda yakin akan menghapus Supplier <?php echo $i; ?> ?
                                                                                     </div>
                                                                                 </div>
                                                                             </div>

@@ -355,7 +355,7 @@
                             </a>
                             <ul class="treeview-menu">
                                 <li><a href="<?php echo base_url('barang') ?>"><i class="fa fa-list-ol"></i>List Barang</a></li>
-                                <li><a href="<?php echo base_url('merk') ?>"><i class="fa fa-qrcode"></i>Merk Barang</a></li>
+                                <li><a href="<?php echo base_url('merek') ?>"><i class="fa fa-qrcode"></i>Merek Barang</a></li>
                                 <li><a href="<?php echo base_url('kategori') ?>"><i class="fa fa-tags"></i>Kategori Barang</a></li>
                             </ul>
                         </li>
@@ -423,7 +423,7 @@
                             </a>
                             <ul class="treeview-menu">
                                 <li><a href="<?php echo base_url('barang') ?>"><i class="fa fa-list-ol"></i></a></li>
-                                <li><a href="<?php echo base_url('merk') ?>"><i class="fa fa-qrcode"></i></a></li>
+                                <li><a href="<?php echo base_url('merek') ?>"><i class="fa fa-qrcode"></i></a></li>
                                 <li><a href="<?php echo base_url('kategori') ?>"><i class="fa fa-tags"></i></a></li>
                             </ul>
                         </li>

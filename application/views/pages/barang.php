@@ -20,13 +20,14 @@
                                 <div class="row" style="margin: 0;margin-top: 15px;">
                                     <div class="col-md-2">
                                         <div class="form-horizontal" role="form">
-                                            <div class="form-group">
-                                                <div class="col-sm-4 text-center icon" >
+                                            <div class="form-group add-container">
+                                                <!-- <div class="col-sm-4 text-center icon" >
                                                     <span class="add-barang glyphicon glyphicon-plus" style ="font-size: 1.8em;padding: 4%;color: #428bca;" aria-hidden="true"></span>
                                                 </div>
                                                 <div class="col-sm-8 text">
                                                     <h5>Tambah</h5>
-                                                </div>
+                                                </div> -->
+                                                <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#add-barang"><span class="glyphicon glyphicon-plus"></span> &nbsp;Tambah Barang</button>
                                             </div>
                                         </div>
                                     </div>
@@ -86,7 +87,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="box box-info add-form hide">
+                           <!--  <div class="box box-info add-form hide">
                                 <div class="panel panel-default">
                                     <div class="panel-body">
                                         Tambah Barang
@@ -219,6 +220,74 @@
                                                 </div>
                                             </div>
                                         </div>
+                                </div>
+                            </div> -->
+                            <div class="modal fade bs-example-modal-lg" id="add-barang" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                            <h3 class="modal-title" id="myModalLabel">Add Barang</h3>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="row">
+                                                <div class="col-md-10 col-md-offset-1 form-horizontal" role="form">
+                                                    <div class="form-group">
+                                                        <label for="inputEmail3" class="col-sm-2 control-label">Barcode</label>
+                                                        <div class="col-sm-6">
+                                                            <input type="text" class="form-control input-sm" id="inputEmail3" placeholder="Barcode" value="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="inputPassword3" class="col-sm-2 control-label">Nama Barang</label>
+                                                        <div class="col-sm-6">
+                                                          <input type="text" class="form-control input-sm" id="inputPassword3" placeholder="Nama barang" value="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">tambah baru
+                                                        <label for="inputPassword3" class="col-sm-2 control-label">Merk</label>
+                                                        <div class="col-sm-8">
+                                                          <input type="text" class="form-control input-sm" id="inputPassword3" placeholder="Merk" value="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="inputPassword3" class="col-sm-2 control-label">Harga beli</label>
+                                                        <div class="col-sm-8">
+                                                          <input type="text" class="form-control input-sm" id="inputPassword3" placeholder="Harga beli" value="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="inputPassword3" class="col-sm-2 control-label">Harga jual</label>
+                                                        <div class="col-sm-8">
+                                                          <input type="text" class="form-control input-sm" id="inputPassword3" placeholder="Harga jual" value="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="inputPassword3" class="col-sm-2 control-label">Stok masuk</label>
+                                                        <div class="col-sm-4">
+                                                          <input type="text" class="form-control input-sm" id="inputPassword3" placeholder="Stok masuk" value="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="inputPassword3" class="col-sm-2 control-label">Letak gudang</label>
+                                                        <div class="col-sm-5">
+                                                          <input type="text" class="form-control input-sm" id="inputPassword3" placeholder="Letak gudang" value="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="inputPassword3" class="col-sm-2 control-label">Potongan harga</label>
+                                                        <div class="col-sm-5">
+                                                          <input type="text" class="form-control input-sm" id="inputPassword3" placeholder="0%" value="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Submit</button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="box box-info">
